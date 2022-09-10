@@ -4,7 +4,7 @@ function factorial(n) {
     resolve = 1;
   } else {
     for (let i = 1; i < n; i++) {
-      resolve = n*n-i;
+      resolve = resolve * i;
     }
   }
   return resolve;
