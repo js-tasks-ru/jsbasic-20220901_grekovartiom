@@ -1,3 +1,11 @@
 function factorial(n) {
-  // ваш код...
-}
+  let resolve = n;
+  if ( n === 1 || n === 0) {
+    resolve = 1;
+  } else {
+    for (let i = 1; i < n; i++) {
+      resolve = resolve * i;
+    }
+  }
+  return resolve;
+  }

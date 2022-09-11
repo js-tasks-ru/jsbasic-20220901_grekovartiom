@@ -1,3 +1,7 @@
 function truncate(str, maxlength) {
-  // ваш код...
+if (str.length > maxlength) {
+  let countSymbols = parseInt(maxlength);
+ return str.substring(0, countSymbols-1) + "…";
+} else
+  return (str);
 }
